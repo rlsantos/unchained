@@ -1,0 +1,11 @@
+{% extends "base.html"  %}
+{% block content %}
+	<h1>Thank you for your message.</h1>
+	<br/>
+	<p>The message can be seen below.</p>
+	<p><strong>{{ form.subject.label }}:</strong> {{ form.subject.value }}</p>
+	<p><strong>{{ form.message.label }}:</strong> {{ form.message.value }}</p>
+	<p><strong>{{ form.sender.label }}:</strong> {{ form.sender.value }}</p>
+	<p><strong>{{ form.cc_myself.label }}:</strong> {{ form.cc_myself.value }}</p>
+
+{% endblock content %}
